@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 07</title>
+    <style>
+        * {
+            font-size: 16px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .container {
+            height: 15rem;
+            border: 1px solid #a6a;
+            box-shadow: .3rem .3rem .5rem .01rem #a6a;
+            display: flex;
+        }
+
+        .bloco {
+            background-color: rgb(231, 197, 241);
+            color: aliceblue;
+            padding: 1rem;
+            margin: 1rem;
+            width: 7rem;
+            height: 3rem; 
+            border-radius: 10%;
+            box-shadow: .3rem .3rem .5rem .01rem #a6a;
+        }
+
+        .par {
+            background-color: aquamarine;
+            color: rgb(39, 41, 43);
+            padding: 1rem;
+            margin: 1rem;
+            width: 7rem;
+            height: 3rem; 
+            border-radius: 10%;
+            box-shadow: .3rem .3rem .5rem .01rem #a6a;
+        }
+
+        .impar {
+            background-color: chartreuse;
+            color: rgb(30, 31, 32);
+            padding: 1rem;
+            margin: 1rem;
+            width: 7rem;
+            height: 3rem; 
+            border-radius: 10%;
+            box-shadow: .3rem .3rem .5rem .01rem #a6a;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+    <script>
+        /* Estrutura condicional: 
+        1-Comandos de saída
+        2-Declaração de variável
+        3 e 4-Comando de entrada
+        5-Template string
+         */
+
+         //Armazenou a variável, transformou em inteiro e enviou uma mensagem
+        let num = parseInt(prompt("Informe um número:"));
+
+        //Verificar se o número é par ou ímpar
+        if(num % 2 == 0) 
+          document.write(`<div class="par"> O número ${num} é par </div>`);
+        else
+          document.write(`<div class="impar"> O número ${num} é ímpar </div>`);
+
+
+    </script>
+  </div>
+    
+</body>
+</html>

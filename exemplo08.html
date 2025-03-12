@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 07</title>
+    <style>
+        * {
+            font-size: 16px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .container {
+            height: 15rem;
+            border: 1px solid #a6a;
+            box-shadow: .3rem .3rem .5rem .01rem #a6a;
+            display: flex;
+        }
+
+        .bloco {
+            background-color: rgb(231, 197, 241);
+            color: aliceblue;
+            padding: 1rem;
+            margin: 1rem;
+            width: 7rem;
+            height: 3rem; 
+            border-radius: 10%;
+            box-shadow: .3rem .3rem .5rem .01rem #a6a;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+    <script>
+        /* Estrutura sequencial: 
+        1-Comandos de saída
+        2-Declaração de variável
+        3 e 4-Comando de entrada
+        5-Template string
+         */
+
+         //Armazenou a variável, transformou em inteiro e enviou uma mensagem
+        let num = parseInt(prompt("Informe o primeiro número:"));
+
+        //Document write -> Escreve no próprio documento
+        document.write(`<div class="bloco">log_2(${num}) = ${Math.log2(num)}</div>`);
+        document.write(`<div class="bloco">log_10(${num}) = ${Math.log10(num)}</div>`);
+        document.write(`<div class="bloco">log_e(${Math.E}) = ${Math.log(Math.E)}</div>`);
+        document.write(`<div class="bloco">raiz(${num}) = ${Math.sqrt(num)}</div>`);
+        document.write(`<div class="bloco">(${num})^ 3 = ${Math.pow(num)}</div>`);
+        document.write(`<div class="bloco">raiz(${num}) = ${Math.pow(num, .5)}</div>`);
+        
+    </script>
+  </div>
+    
+</body>
+</html>
